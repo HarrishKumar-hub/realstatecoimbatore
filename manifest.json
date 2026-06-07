@@ -1,0 +1,44 @@
+{
+  "name": "LPS Real Estate",
+  "short_name": "LPS Coimbatore",
+  "description": "Land & Plots for Sale in Coimbatore – LPS Real Estate",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#faf9f6",
+  "theme_color": "#15472b",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "real estate"],
+  "lang": "en-IN",
+  "dir": "ltr",
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "View Properties",
+      "short_name": "Properties",
+      "description": "Browse all available land and plots",
+      "url": "/properties.html",
+      "icons": [{ "src": "images/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Contact Us",
+      "short_name": "Contact",
+      "description": "Call or WhatsApp us",
+      "url": "/contact.html",
+      "icons": [{ "src": "images/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}

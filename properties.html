@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Land &amp; Plot Listings – LPS Real Estate, Coimbatore</title>
+    <meta name="description"
+        content="All available land and plots for sale in Coimbatore – Saravanampatti, Annur, Pollachi, Sulur, Singanallur. DTCP approved." />
+    <!-- FEATURE 17: PWA -->
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#15472b" />
+    <!-- FEATURE 18: Schema -->
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"url":"https://lpsrealestate.in/property-detail.html?id=1","name":"Plot for Sale - Saravanampatti"},{"@type":"ListItem","position":2,"url":"https://lpsrealestate.in/property-detail.html?id=2","name":"Farm Land - Annur"}]}
+    </script>
+    <!-- FEATURE 3: GA4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-XXXXXXXXXX');</script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-inner">
+            <a href="index.html" class="logo" style="display:flex; align-items:center;">
+          <img src="images/lps-logo.svg" alt="LPS Real Estate" style="height: 60px; width: auto;" />
+        </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="properties.html" class="active">Properties</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html" class="nav-cta"><i data-lucide="phone" class="icon-sm"></i> Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+        </div>
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="index.html"><i data-lucide="home"></i> Home</a>
+            <a href="properties.html"><i data-lucide="map"></i> Properties</a>
+            <a href="blog.html"><i data-lucide="book-open"></i> Blog</a>
+            <a href="faq.html"><i data-lucide="help-circle"></i> FAQ</a>
+            <a href="contact.html"><i data-lucide="phone"></i> Contact</a>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <h1>Available Land &amp; Plot Listings</h1>
+        <p>All properties are DTCP / Panchayat approved with verified legal documents</p>
+    </div>
+    <div class="breadcrumb">
+        <div class="container"><a href="index.html">Home</a><span>›</span> Properties</div>
+    </div>
+
+    <!-- FEATURE 4 + 14: Search Bar & Filters -->
+    <div class="filter-bar">
+        <div class="container">
+            <div class="filter-inner">
+                <div class="filter-search-wrap">
+                    <i data-lucide="search" class="icon-sm" style="color:var(--text-muted);"></i>
+                    <input type="text" id="searchInput" placeholder="Search by area, type..."
+                        class="filter-search-input" />
+                </div>
+                <select id="filter-type">
+                    <option value="all">Property Type</option>
+                    <option value="residential">Residential Plot</option>
+                    <option value="agricultural">Agricultural Land</option>
+                    <option value="layout">Layout Plot</option>
+                </select>
+                <select id="filter-area">
+                    <option value="all">All Areas</option>
+                    <option value="saravanampatti">Saravanampatti</option>
+                    <option value="annur">Annur</option>
+                    <option value="singanallur">Singanallur</option>
+                    <option value="pollachi">Pollachi</option>
+                    <option value="sulur">Sulur</option>
+                    <option value="coimbatore-north">Coimbatore North</option>
+                </select>
+                <select id="filter-budget">
+                    <option value="all">Any Budget</option>
+                    <option value="under20">Under ₹20 Lakhs</option>
+                    <option value="20to50">₹20L - ₹50L</option>
+                    <option value="above50">Above ₹50 Lakhs</option>
+                </select>
+                <span id="result-count">Properties: <strong id="count-num">9</strong></span>
+            </div>
+        </div>
+    </div>
+
+    <section class="section" style="background:var(--ivory);">
+        <div class="container">
+            <div class="listings-grid" id="listings-container">
+                <div class="property-card reveal" data-type="residential" data-area="saravanampatti">
+                    <a href="property-detail.html?id=1">
+                        <div class="card-img-wrap"><img class="card-img" src="images/plot-saravanampatti.png"
+                                alt="Plot Saravanampatti" loading="lazy" />
+                            <div class="card-img-overlay"></div><span class="card-badge">Residential</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>Plot for Sale – Saravanampatti</h3>
+                            <div class="card-meta">
+                                <div class="card-meta-item"><i data-lucide="map-pin" class="icon-sm"></i> Saravanampatti
+                                </div>
+                                <div class="card-meta-item"><i data-lucide="maximize-2" class="icon-sm"></i> <span
+                                        data-cents="5">5 Cents</span></div>
+                                <div class="card-meta-item"><i data-lucide="route" class="icon-sm"></i> 20 ft Road</div>
+                                <div class="card-meta-item"><i data-lucide="shield-check" class="icon-sm"></i> DTCP
+                                    Approved</div>
+                            </div>
+                        </div>
+                        <div class="card-divider"></div>
+                        <div class="card-footer-row"><span class="card-price-text">Price on request</span><span
+                                class="card-enquire-btn">View Details &rarr;</span></div>
+                    </a>
+                </div>
+                <div class="property-card reveal" data-type="agricultural" data-area="annur">
+                    <a href="property-detail.html?id=2">
+                        <div class="card-img-wrap"><img class="card-img" src="images/land-annur.png"
+                                alt="Farm land Annur" loading="lazy" />
+                            <div class="card-img-overlay"></div><span class="card-badge">Agriculture</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>Farm Land for Sale – Annur</h3>
+                            <div class="card-meta">
+                                <div class="card-meta-item"><i data-lucide="map-pin" class="icon-sm"></i> Annur,
+                                    Coimbatore</div>
+                                <div class="card-meta-item"><i data-lucide="maximize-2" class="icon-sm"></i> <span
+                                        data-cents="200">2 Acres</span></div>
+                                <div class="card-meta-item"><i data-lucide="droplets" class="icon-sm"></i> Borewell
+                                </div>
+                                <div class="card-meta-item"><i data-lucide="shield-check" class="icon-sm"></i> Clear
+                                    Patta</div>
+                            </div>
+                        </div>
+                        <div class="card-divider"></div>
+                        <div class="card-footer-row"><span class="card-price-text">Price on request</span><span
+                                class="card-enquire-btn">View Details &rarr;</span></div>
+                    </a>
+                </div>
+                <div class="property-card reveal" data-type="residential" data-area="singanallur">
+                    <a href="property-detail.html?id=3">
+                        <div class="card-img-wrap"><img class="card-img" src="images/plot-singanallur.png"
+                                alt="Corner plot Singanallur" loading="lazy" />
+                            <div class="card-img-overlay"></div><span class="card-badge">Corner Plot</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>Corner Plot – Singanallur</h3>
+                            <div class="card-meta">
+                                <div class="card-meta-item"><i data-lucide="map-pin" class="icon-sm"></i> Singanallur
+                                </div>
+                                <div class="card-meta-item"><i data-lucide="maximize-2" class="icon-sm"></i> <span
+                                        data-cents="3">3 Cents</span></div>
+                                <div class="card-meta-item"><i data-lucide="route" class="icon-sm"></i> 30 ft Road</div>
+                                <div class="card-meta-item"><i data-lucide="shield-check" class="icon-sm"></i> DTCP
+                                    Approved</div>
+                            </div>
+                        </div>
+                        <div class="card-divider"></div>
+                        <div class="card-footer-row"><span class="card-price-text">Price on request</span><span
+                                class="card-enquire-btn">View Details &rarr;</span></div>
+                    </a>
+                </div>
+                <div class="property-card reveal" data-type="agricultural" data-area="pollachi">
+                    <a href="property-detail.html?id=4">
+                        <div class="card-img-wrap"><img class="card-img" src="images/land-pollachi.png"
+                                alt="Farm land Pollachi" loading="lazy" />
+                            <div class="card-img-overlay"></div><span class="card-badge">Agriculture</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>Farm Land – Pollachi</h3>
+                            <div class="card-meta">
+                                <div class="card-meta-item"><i data-lucide="map-pin" class="icon-sm"></i> Pollachi</div>
+                                <div class="card-meta-item"><i data-lucide="maximize-2" class="icon-sm"></i> <span
+                                        data-cents="150">1.5 Acres</span></div>
+                                <div class="card-meta-item"><i data-lucide="leaf" class="icon-sm"></i> Fertile Soil
+                                </div>
+                                <div class="card-meta-item"><i data-lucide="shield-check" class="icon-sm"></i> Direct
+                                    Patta</div>
+                            </div>
+                        </div>
+                        <div class="card-divider"></div>
+                        <div class="card-footer-row"><span class="card-price-text">Price on request</span><span
+                                class="card-enquire-btn">View Details &rarr;</span></div>
+                    </a>
+                </div>
+                <div class="property-card reveal" data-type="residential" data-area="coimbatore-north">
+                    <a href="property-detail.html?id=5">
+                        <div class="card-img-wrap"><img class="card-img" src="images/plot-coimbatore-north.png"
+                                alt="Plot Coimbatore North" loading="lazy" />
+                            <div class="card-img-overlay"></div><span class="card-badge">Residential</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>Plot – Coimbatore North</h3>
+                            <div class="card-meta">
+                                <div class="card-meta-item"><i data-lucide="map-pin" class="icon-sm"></i> Coimbatore
+                                    North</div>
+                                <div class="card-meta-item"><i data-lucide="maximize-2" class="icon-sm"></i> <span
+                                        data-cents="4">4 Cents</span></div>
+                                <div class="card-meta-item"><i data-lucide="route" class="icon-sm"></i> Near Main Road
+                                </div>
+                                <div class="card-meta-item"><i data-lucide="shield-check" class="icon-sm"></i> DTCP
+                                    Approved</div>
+                            </div>
+                        </div>
+                        <div class="card-divider"></div>
+                        <div class="card-footer-row"><span class="card-price-text">Price on request</span><span
+                                class="card-enquire-btn">View Details &rarr;</span></div>
+                    </a>
+                </div>
+                <div class="property-card reveal" data-type="layout" data-area="sulur">
+                    <a href="property-detail.html?id=6">
+                        <div class="card-img-wrap"><img class="card-img" src="images/plot-sulur.png"
+                                alt="Layout plot Sulur" loading="lazy" />
+                            <div class="card-img-overlay"></div><span class="card-badge">Layout Plot</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>Layout Plot – Sulur</h3>
+                            <div class="card-meta">
+                                <div class="card-meta-item"><i data-lucide="map-pin" class="icon-sm"></i> Sulur</div>
+                                <div class="card-meta-item"><i data-lucide="maximize-2" class="icon-sm"></i> <span
+                                        data-cents="6">6 Cents</span></div>
+                                <div class="card-meta-item"><i data-lucide="layout-grid" class="icon-sm"></i> Gated
+                                    Layout</div>
+                                <div class="card-meta-item"><i data-lucide="shield-check" class="icon-sm"></i> DTCP
+                                    Approved</div>
+                            </div>
+                        </div>
+                        <div class="card-divider"></div>
+                        <div class="card-footer-row"><span class="card-price-text">Price on request</span><span
+                                class="card-enquire-btn">View Details &rarr;</span></div>
+                    </a>
+                </div>
+                <div class="property-card reveal" data-type="residential" data-area="saravanampatti">
+                    <a href="property-detail.html?id=7">
+                        <div class="card-img-wrap"><img class="card-img" src="images/plot-coimbatore-north.png"
+                                alt="Plot NH Saravanampatti" loading="lazy" />
+                            <div class="card-img-overlay"></div><span class="card-badge">Residential</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>Plot Near NH – Saravanampatti</h3>
+                            <div class="card-meta">
+                                <div class="card-meta-item"><i data-lucide="map-pin" class="icon-sm"></i> Saravanampatti
+                                </div>
+                                <div class="card-meta-item"><i data-lucide="maximize-2" class="icon-sm"></i> <span
+                                        data-cents="8">8 Cents</span></div>
+                                <div class="card-meta-item"><i data-lucide="route" class="icon-sm"></i> 40 ft Access
+                                </div>
+                                <div class="card-meta-item"><i data-lucide="shield-check" class="icon-sm"></i> DTCP
+                                    Approved</div>
+                            </div>
+                        </div>
+                        <div class="card-divider"></div>
+                        <div class="card-footer-row"><span class="card-price-text">Price on request</span><span
+                                class="card-enquire-btn">View Details &rarr;</span></div>
+                    </a>
+                </div>
+                <div class="property-card reveal" data-type="agricultural" data-area="annur">
+                    <a href="property-detail.html?id=8">
+                        <div class="card-img-wrap"><img class="card-img" src="images/land-annur.png"
+                                alt="Farm land Annur" loading="lazy" />
+                            <div class="card-img-overlay"></div><span class="card-badge">Agriculture</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>Irrigated Farm Land – Annur</h3>
+                            <div class="card-meta">
+                                <div class="card-meta-item"><i data-lucide="map-pin" class="icon-sm"></i> Annur</div>
+                                <div class="card-meta-item"><i data-lucide="maximize-2" class="icon-sm"></i> <span
+                                        data-cents="300">3 Acres</span></div>
+                                <div class="card-meta-item"><i data-lucide="droplets" class="icon-sm"></i> Fertile Land
+                                </div>
+                                <div class="card-meta-item"><i data-lucide="shield-check" class="icon-sm"></i> Clear
+                                    Patta</div>
+                            </div>
+                        </div>
+                        <div class="card-divider"></div>
+                        <div class="card-footer-row"><span class="card-price-text">Price on request</span><span
+                                class="card-enquire-btn">View Details &rarr;</span></div>
+                    </a>
+                </div>
+                <div class="property-card reveal" data-type="layout" data-area="sulur">
+                    <a href="property-detail.html?id=9">
+                        <div class="card-img-wrap"><img class="card-img" src="images/plot-sulur.png"
+                                alt="Layout plot Sulur Main Road" loading="lazy" />
+                            <div class="card-img-overlay"></div><span class="card-badge">Layout Plot</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>Approved Layout – Sulur Main Road</h3>
+                            <div class="card-meta">
+                                <div class="card-meta-item"><i data-lucide="map-pin" class="icon-sm"></i> Sulur</div>
+                                <div class="card-meta-item"><i data-lucide="maximize-2" class="icon-sm"></i> <span
+                                        data-cents="4.5">4.5 Cents</span></div>
+                                <div class="card-meta-item"><i data-lucide="route" class="icon-sm"></i> 50 ft Main Road
+                                </div>
+                                <div class="card-meta-item"><i data-lucide="shield-check" class="icon-sm"></i> DTCP
+                                    Approved</div>
+                            </div>
+                        </div>
+                        <div class="card-divider"></div>
+                        <div class="card-footer-row"><span class="card-price-text">Price on request</span><span
+                                class="card-enquire-btn">View Details &rarr;</span></div>
+                    </a>
+                </div>
+            </div>
+
+            <div id="no-results" style="display:none;text-align:center;padding:60px 20px;color:var(--text-muted);">
+                <i data-lucide="search-x"
+                    style="width:48px;height:48px;stroke-width:1;color:var(--gray-200);display:block;margin:0 auto 14px;"></i>
+                <p style="font-size:17px;font-weight:600;margin-bottom:8px;color:var(--text);">No properties found</p>
+                <p>Try a different search or <a href="contact.html"
+                        style="color:var(--green-600);font-weight:600;">contact us</a>.</p>
+            </div>
+
+            <div class="pagination">
+                <button class="active">1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>&rsaquo;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Alert CTA -->
+    <section class="section">
+        <div class="container" style="text-align:center;">
+            <div class="reveal"
+                style="background:var(--green-50);border:1px solid rgba(21,71,43,0.12);border-radius:var(--radius-lg);padding:32px;">
+                <i data-lucide="bell"
+                    style="width:36px;height:36px;color:var(--green-600);margin-bottom:12px;display:inline-block;"></i>
+                <h2 style="font-size:22px;color:var(--green-800);margin-bottom:8px;">Didn't find what you're looking
+                    for?</h2>
+                <p style="margin-bottom:20px;color:var(--text-muted);">Register your requirement and get notified on
+                    WhatsApp when new plots arrive.</p>
+                <button class="btn btn-primary" data-alert-trigger><i data-lucide="bell" class="icon-md"></i> Alert Me
+                    on WhatsApp</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <div class="logo-footer">LPS Real Estate</div>
+                <div class="footer-tagline">Land &amp; Plots &middot; Coimbatore &middot; Est. 2005</div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="properties.html">Properties</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get In Touch</h4>
+                <div class="footer-contact-item"><i data-lucide="phone" class="icon-sm"></i><a
+                        href="tel:+917010383468">+91 70103 83468</a></div>
+                <div class="footer-contact-item"><i data-lucide="message-circle" class="icon-sm"></i><a
+                        href="https://wa.me/917010383468" target="_blank" rel="noopener">WhatsApp Us</a></div>
+            </div>
+        </div>
+        <div class="footer-bottom">&copy; 2025 LPS Real Estate. All rights reserved.</div>
+    </footer>
+
+    <!-- GLOBAL COMPONENTS (paste into all files before body end) -->
+    <!-- Floating WA -->
+    <div class="float-wa-wrap" id="floatWaWrap">
+        <div class="float-wa-bubble" id="floatWaBubble">
+            <div class="float-wa-bubble-header">
+                <div class="float-wa-avatar">R</div>
+                <div>
+                    <div class="float-wa-name">Mr. Sakthi</div>
+                    <div class="float-wa-status">● Online</div>
+                </div>
+            </div>
+            <p class="float-wa-msg">Hi! Tell me your plot requirement.</p><a href="https://wa.me/917010383468"
+                class="float-wa-cta" target="_blank" rel="noopener"><span class="wa-icon"></span> Chat on WhatsApp</a>
+        </div><button class="float-wa-btn" id="floatWaBtn"><span class="wa-float-icon"></span><span
+                class="float-wa-notif">1</span></button>
+    </div>
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop"><i data-lucide="chevron-up" style="width:20px;height:20px;"></i></button>
+    <!-- Sticky call bar -->
+    <div class="sticky-call-bar" id="stickyCallBar"><span class="scb-text"><strong>Call us:</strong> <strong>+91 70103 83468</strong></span><a href="tel:+917010383468" class="btn btn-gold" style="padding:8px 16px;"><i
+                data-lucide="phone" class="icon-sm"></i> Call</a><button class="scb-close"
+            id="callBarClose">&#10005;</button></div>
+    <!-- Exit intent popup -->
+    <div class="exit-overlay" id="exitOverlay">
+        <div class="exit-popup"><button class="exit-popup-close" id="exitClose">&#10005;</button>
+            <div class="exit-popup-header">
+                <h2>Free Callback</h2>
+                <p>Leave your number, we'll call you back.</p>
+            </div>
+            <div class="exit-popup-body">
+                <form id="exitForm"><input type="tel" placeholder="+91 XXXXX XXXXX" required /><button type="submit"
+                        class="btn btn-primary" style="width:100%;"><i data-lucide="phone-call" class="icon-md"></i>
+                        Call Me Back</button></form>
+                <div class="exit-no-thanks" onclick="document.getElementById('exitOverlay').classList.remove('show')">No
+                    thanks →</div>
+            </div>
+        </div>
+    </div>
+    <!-- Property Alert Modal -->
+    <div class="alert-overlay" id="alertOverlay">
+        <div class="alert-modal"><button class="alert-modal-close" id="alertModalClose"><i data-lucide="x"
+                    style="width:14px;height:14px;"></i></button>
+            <div style="text-align:center;margin-bottom:16px;">
+                <h3>Plot Alerts</h3>
+                <p>Get notified on WhatsApp.</p>
+            </div>
+            <form id="alertForm">
+                <div class="form-group"><input type="tel" placeholder="+91 XXXXX XXXXX" required /></div><button
+                    type="submit" class="btn btn-primary" style="width:100%;"><i data-lucide="bell" class="icon-md"></i>
+                    Register</button>
+                <div class="success-msg" style="display:none;">Registered!</div>
+            </form>
+        </div>
+    </div>
+    <!-- PWA Install -->
+    <div class="pwa-banner" id="pwaBanner">
+        <p><strong>Add to Home Screen</strong></p>
+        <div class="pwa-banner-btns"><button class="pwa-install-btn" id="pwaInstall">Install</button><button
+                class="pwa-dismiss-btn" id="pwaDismiss">Not Now</button></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+
+</html>
+

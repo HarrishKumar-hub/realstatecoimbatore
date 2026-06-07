@@ -1,0 +1,128 @@
+<!-- ═══════════════════════════════════════════
+     GLOBAL COMPONENTS — paste before </body>
+     on every page (already included below)
+     ═══════════════════════════════════════════ -->
+
+<!-- FEATURE 1+7: Floating WhatsApp Chat Widget -->
+<div class="float-wa-wrap" id="floatWaWrap">
+    <div class="float-wa-bubble" id="floatWaBubble">
+        <div class="float-wa-bubble-header">
+            <div class="float-wa-avatar">R</div>
+            <div>
+                <div class="float-wa-name">Mr. Sakthi</div>
+                <div class="float-wa-status">● Online – usually replies in minutes</div>
+            </div>
+        </div>
+        <p class="float-wa-msg">
+            Hello! I'm looking for land or plots in Coimbatore. Can you help me?
+        </p>
+        <a href="https://wa.me/917010383468?text=Hello%20Mr.%20Sakthi%2C%20I%20am%20looking%20for%20land%20in%20Coimbatore.%20Please%20help."
+            class="float-wa-cta" target="_blank" rel="noopener">
+            <span class="wa-icon"></span> Send Message on WhatsApp
+        </a>
+    </div>
+    <button class="float-wa-btn" id="floatWaBtn" aria-label="Chat on WhatsApp" style="position:relative;">
+        <span class="wa-float-icon"></span>
+        <span class="float-wa-notif">1</span>
+    </button>
+</div>
+
+<!-- FEATURE 2: Back To Top -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i data-lucide="chevron-up" style="width:20px;height:20px;"></i>
+</button>
+
+<!-- FEATURE 5: Sticky Call Bar -->
+<div class="sticky-call-bar" id="stickyCallBar">
+    <span class="scb-text"><strong>Need help finding land?</strong> Call us free: <strong>+91 70103 83468</strong></span>
+    <a href="tel:+917010383468" class="btn btn-gold" style="padding:8px 20px;font-size:13.5px;">
+        <i data-lucide="phone" class="icon-sm"></i> Call Now
+    </a>
+    <a href="https://wa.me/917010383468" target="_blank" rel="noopener" class="btn btn-whatsapp"
+        style="padding:8px 18px;font-size:13.5px;">
+        <span class="wa-icon"></span> WhatsApp
+    </a>
+    <button class="scb-close" id="callBarClose" aria-label="Dismiss">&#10005;</button>
+</div>
+
+<!-- FEATURE 6: Exit Intent Popup -->
+<div class="exit-overlay" id="exitOverlay">
+    <div class="exit-popup">
+        <button class="exit-popup-close" id="exitClose" aria-label="Close">&#10005;</button>
+        <div class="exit-popup-header">
+            <h2>Before You Leave…</h2>
+            <p>Let us call you back with the best available plots in your budget.</p>
+        </div>
+        <div class="exit-popup-body">
+            <form id="exitForm">
+                <div class="ep-label">Your Name</div>
+                <input type="text" placeholder="Your full name" required />
+                <div class="ep-label">Phone Number</div>
+                <input type="tel" placeholder="+91 XXXXX XXXXX" required />
+                <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:4px;">
+                    <i data-lucide="phone-call" class="icon-md"></i> Get a Callback
+                </button>
+            </form>
+            <div class="exit-no-thanks" id="exitNoThanks"
+                onclick="document.getElementById('exitOverlay').classList.remove('show')">
+                No thanks, I'll browse on my own →
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FEATURE 8: Property Alert Modal -->
+<div class="alert-overlay" id="alertOverlay">
+    <div class="alert-modal">
+        <button class="alert-modal-close" id="alertModalClose" aria-label="Close">
+            <i data-lucide="x" style="width:14px;height:14px;"></i>
+        </button>
+        <div style="text-align:center;margin-bottom:16px;">
+            <div
+                style="width:52px;height:52px;background:var(--green-100);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;">
+                <i data-lucide="bell" style="color:var(--green-600);width:24px;height:24px;"></i>
+            </div>
+            <h3>Get Plot Alerts on WhatsApp</h3>
+            <p>We'll notify you instantly when a new plot matching your preference is available.</p>
+        </div>
+        <form id="alertForm" class="site-form" novalidate>
+            <div class="form-group">
+                <label for="alert-name">Your Name</label>
+                <input type="text" id="alert-name" placeholder="Your full name" required />
+            </div>
+            <div class="form-group">
+                <label for="alert-phone">WhatsApp Number</label>
+                <input type="tel" id="alert-phone" placeholder="+91 XXXXX XXXXX" required />
+            </div>
+            <div class="form-group">
+                <label for="alert-type">Plot Type</label>
+                <select id="alert-type">
+                    <option>Any Available</option>
+                    <option>Residential Plot</option>
+                    <option>Agricultural Land</option>
+                    <option>Layout Plot</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+                <i data-lucide="bell" class="icon-md"></i> Register for Alerts
+            </button>
+            <div class="success-msg" style="display:none;align-items:center;gap:8px;">
+                <i data-lucide="check-circle" class="icon-sm"></i> Registered! We'll WhatsApp you new listings.
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- FEATURE 17: PWA Install Banner -->
+<div class="pwa-banner" id="pwaBanner">
+    <p><strong>Add to Home Screen</strong><br>Install LPS Real Estate as an app on your phone for quick access.
+    </p>
+    <div class="pwa-banner-btns">
+        <button class="pwa-install-btn" id="pwaInstall">Install App</button>
+        <button class="pwa-dismiss-btn" id="pwaDismiss">Not Now</button>
+    </div>
+</div>
+
+<!-- Copy toast -->
+<div class="copy-toast" id="copyToast"></div>
+
